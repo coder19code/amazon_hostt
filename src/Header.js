@@ -1,10 +1,12 @@
 import React from 'react';
 import "./Header.css";
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import { useStateValue } from './StateProvider';
 import {auth} from "./firebase";
 
 function Header(){
+
+    
     const[{ basket, user }, dispatch]= useStateValue();
     const handleAuthentication = ()=>{
       if (user){
@@ -39,7 +41,7 @@ function Header(){
           <div onClick={handleAuthentication}
           className='header__option'>
             <span className='header__optionLineOn
-            e'>Hello Guest</span>
+            e'>Hello {!user? 'Guest' : user.email}</span>
             <span className='header__optionLineTw
             o'> {user ? 'Sign out' : 'Sign In'} </span>
           </div>

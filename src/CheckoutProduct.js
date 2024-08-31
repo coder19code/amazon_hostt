@@ -40,4 +40,4 @@ const removeFromBasket=()=>{
   )
 }
 
-export default CheckoutProduct
+export default CheckoutProduct;

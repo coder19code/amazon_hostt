@@ -3,15 +3,16 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyDJRIhMbt9ieYXsbKC0e2yIDhtP50RvguM",
-    authDomain: "amazo-ae586.firebaseapp.com",
-    projectId: "amazo-ae586",
-    storageBucket: "amazo-ae586.appspot.com",
-    messagingSenderId: "172573962959",
-    appId: "1:172573962959:web:cd5091f80dfe44d6563dba",
-    measurementId: "G-4N3B9X70KY"
-  };
+  apiKey: "AIzaSyAn_FHoHK4B4ZjdO0PmUmKfBM0U6E0l8m0",
+  authDomain: "life-is-bad.firebaseapp.com",
+  projectId: "life-is-bad",
+  storageBucket: "life-is-bad.appspot.com",
+  messagingSenderId: "57717710156",
+  appId: "1:57717710156:web:4315a7bb083d9aa463c3e9",
+  measurementId: "G-2WWS7FBTNQ"
+};
 
 const app = initializeApp(firebaseConfig);
 const auth= getAuth(app);
